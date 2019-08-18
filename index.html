@@ -69,7 +69,7 @@
   <div class="container">
     <section class="content">
       <div class="row">
-        <div class="col-xl-9 col-lg-9 col-md-9 col-12">
+        <div class="col-xl-9 col-lg-9 col-md-12 col-12">
           <div class="news_block">
             <h3 class="news_title">
               НОВОСТИ
@@ -78,14 +78,18 @@
             <div class="news">
               <div class="row">
                 <div class="col-xl-5 col-lg-5 col-md-5 col-12">
-                  <img src="img/Post1.png" alt="" class="img-fluid">
+                  <a href="news.html">
+                    <img src="img/Post1.png" alt="" class="img-fluid">
+                  </a>
                 </div>
                 <div class="col-xl-7 col-lg-7 col-md-7 col-12 ">
                   <div class="news_text">
                     <div class="header">
-                      <h4 class="news_header">
-                        Xiaomi представила робот-пылесос с лазерным датчиком
-                      </h4>
+                      <a href="news.html" class="news_header_link">
+                        <h4 class="news_header">
+                          Xiaomi представила робот-пылесос с лазерным датчиком
+                        </h4>
+                      </a>
                       <span class="news_date">13.08.19</span>
                     </div>
                     <p class="news_info">
@@ -107,7 +111,7 @@
               </div>
             </div>
             <!--for a single news-->
-            <div class="news">
+            <!-- <div class="news">
               <div class="row">
                 <div class="col-xl-5 col-lg-5 col-md-5 col-12">
                   <img src="img/Post1.png" alt="" class="img-fluid">
@@ -228,13 +232,14 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
-          <div class="pagination"> <!--form pagination-->
+          <div class="pagination">
+            <!--form pagination-->
 
           </div>
         </div>
-        <div class="col-xl-3 col-lg-3 col-md-3 col-12">
+        <div class="col-xl-3 col-lg-3 col-md-12 col-12">
           <div class="popular_news_block">
             <h3 class="popular_news_title">
               ПОПУЛЯРНЫЕ
@@ -267,7 +272,33 @@
     </section>
   </div>
   <footer>
-    
+    <div class="container">
+      <div class="footer">
+        <div class="row justify-content-between">
+          <div class="col-xl-6 col-lg-6 col-md-8 col-12">
+            <ul>
+              <li>Address: 9, Ziyolilar str., M.Ulugbek district, Tashkent city, 100170
+              </li>
+              <li>Phone: +998 97 256 56 54
+              </li>
+              <li>E-mail: info@numservice.uz</li>
+            </ul>
+            <ul>
+              <li class="list-inline"><a href="#"><img src="img/fb.svg" alt="icon"></a></li>
+              <li class="list-inline"><a href="#"><img src="img/insta.svg" alt="icon"></a></li>
+              <li class="list-inline"><a href="#"><img src="img/tg.svg" alt="icon"></a></li>
+              <li class="list-inline"><a href="#"><img src="img/twitter.svg" alt="icon"></a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-3 col-12">
+            <a href="#" class="footer_logo navbar-brand">
+              <img src="img/logo.svg" alt="logo" class="img-fluid logo">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </footer>
   <script src="js/scripts.min.js"></script>
 
