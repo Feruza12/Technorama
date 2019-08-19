@@ -17,11 +17,49 @@
 </head>
 
 <body>
+  <nav id="sidebar">
+    <div id="dismiss">
+      <img src="img/arrow-right.svg" alt="arrow" width="17px">
+    </div>
+    <ul class="list-unstyled components mt-5">
+      <div class="d-flex ">
+        <li class="lang">
+          <a>РУ</a>
+        </li>
+        <li class="lang">
+          <a> UZB</a>
+        </li>
+      </div>
+      <li>
+        <form class="form-inline search_media ml-auto ">
+          <input class="" type="search" placeholder="поиск..." aria-label="Search" title="Search">
+          <button class="search_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18.907" height="18.507" viewBox="0 0 18.907 18.507">
+              <g id="search-icon" transform="translate(0.5 0.5)" opacity="0.75">
+                <circle id="ellipse" cx="8" cy="8" r="8" fill="rgba(0,0,0,0)" stroke="#242a38" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1" />
+                <line id="line" x2="3.5" y2="3.5" stroke-width="1" transform="translate(14.2 13.8)" stroke="#242a38"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none" />
+                <path id="path" d="M9,2.8a5.335,5.335,0,0,1,5.3,5.3" transform="translate(-0.5 -0.5)"
+                  fill="rgba(0,0,0,0)" stroke="#242a38" stroke-linecap="round" stroke-miterlimit="10"
+                  stroke-width="1" />
+              </g>
+            </svg>
+          </button>
+        </form>
+      </li>
+      <li class="nav-item active"><a href="#">техника</a></li>
+      <li class="nav-item"><a href="#">игры</a></li>
+      <li class="nav-item"><a href="#">обзоры</a></li>
+      <li class="nav-item"><a href="#">о нас</a></li>
+    </ul>
+  </nav>
   <div class="conatiner-fluid nav_container sticky-top">
     <div class="container">
       <nav class="navbar navbar-expand-lg">
         <a href="index.html" class="navbar-brand logo">
           <img class="img_logo img-fluid" src="img/logo&Text2.svg" alt="logo" />
+          <img class="img-fluid logo_media" src="img/logo.svg" alt="logo" />
         </a>
         <div id="navbarSupportedContent" class="collapse navbar-collapse">
           <ul class="navbar-nav m-auto">
@@ -54,9 +92,9 @@
             <a class="dropdown-item"> UZB</a>
           </div>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <button class="navbar-toggler" id="sidebarCollapse" type="button" data-toggle="collapse"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <img src="img/bars.svg" alt="" width="25px">
+          <img src="img/align-right.svg" alt="bars" width="20px">
         </button>
       </nav>
     </div>
@@ -273,7 +311,7 @@
               ПОПУЛЯРНЫЕ
             </h3>
             <div class="popular_news">
-              <img src="img/Post.png" alt="post" class="img-fluid pop_img" >
+              <img src="img/Post.png" alt="post" class="img-fluid pop_img">
               <a href="news.html">
                 <p class="popular_news_title">
                   Игровой ASUS ROG Phone со съёмным кулером меньше чем за $500 на JD
@@ -334,7 +372,12 @@
 
     </div>
   </footer>
+  <div class="overlay"></div>
+
   <script src="js/scripts.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
 
 </body>
 
