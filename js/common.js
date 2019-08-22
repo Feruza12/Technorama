@@ -14,23 +14,9 @@ $(function () {
 		});
 	});
 
-	// var switchStatus = false;
-	// $(".wrap").on('change', function () {
-	// 	if ($(this).is(':checked')) {
-	// 		switchStatus = $(this).is(':checked');
-	// 		// alert(switchStatus);// To verify
-	// 	}
-	// 	else {
-	// 		switchStatus = $(this).is(':checked');
-	// 		// alert(switchStatus);// To verify
-	// 	}
-	// });
-
-	// if(switchStatus){
-	// 	document.documentElement.classList.add('theme--dark')
-	// }
-	// else{
-	// 	document.documentElement.classList.add('theme--default')
-	// }
+	$('.switch').click(function(){
+		console.log("clicked");
+		$('body').toggleClass('night')
+	})
 	
 });
