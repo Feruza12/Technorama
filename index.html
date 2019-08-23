@@ -18,11 +18,10 @@
 </head>
 
 <body>
-
-  <button onclick="window.navigator.vibrate(3000);">asdasdas</button>
   <nav id="sidebar">
     <div id="dismiss">
-      <img src="img/arrow-right.svg" alt="arrow" width="17px">
+      <!-- <img src="img/arrow-right.svg" alt="arrow" width="17px"> -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="close" style="vertical-align: middle" width="18px" viewBox="0 0 448 512"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
     </div>
     <ul class="list-unstyled components mt-5">
       <div class="d-flex ">
@@ -61,8 +60,32 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg">
         <a href="index.html" class="navbar-brand logo">
-          <img class="img_logo img-fluid" src="img/logo&Text2.svg" alt="logo" />
-          <img class="img-fluid logo_media" src="img/logo.svg" alt="logo" />
+          <img id="img" class="img_logo img-fluid" src="img/logo&Text2.svg" alt="logo" />
+          <!-- <img class="img-fluid logo_media" src="img/logo.svg" alt="logo" /> -->
+          <svg class="img-fluid logo_media" style="vertical-align: middle" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 84.59 50.87">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #0b2936;
+                }
+
+                .cls-2 {
+                  fill: #fbae22;
+                }
+              </style>
+            </defs>
+            <title>Asset 1</title>
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path class="cls-1" d="M34.88,0V8H21.49V45.9H13.4V8H0V0Z" />
+                <polygon class="cls-2" points="84.59 50.87 0 50.87 0 33.13 73.38 33.13 84.59 50.87" />
+                <path class="cls-1"
+                  d="M58.41,0a17.8,17.8,0,0,1,6.67,1.12,13.29,13.29,0,0,1,4.59,3A11.65,11.65,0,0,1,72.32,8.5a16.44,16.44,0,0,1,.85,5.24,17.75,17.75,0,0,1-.78,5.16,12.74,12.74,0,0,1-2.55,4.63,13.28,13.28,0,0,1-4.59,3.33,16.4,16.4,0,0,1-6.84,1.29H44.13A1,1,0,0,0,43,29.31V45.9H35V27.74q0-3.87,1.7-5.57t5.51-1.7H58.68a7.06,7.06,0,0,0,2.93-.55,5.52,5.52,0,0,0,2-1.42,6,6,0,0,0,1.12-2,7.37,7.37,0,0,0,.38-2.35,6.44,6.44,0,0,0-1.53-4.31A6,6,0,0,0,58.75,8H34.88V0Z" />
+              </g>
+            </g>
+          </svg>
+
         </a>
         <div id="navbarSupportedContent" class="collapse navbar-collapse">
           <ul class="navbar-nav m-auto">
@@ -107,7 +130,7 @@
               </div>
             </label>
           </div>
-        </div>       
+        </div>
         <div class="dropdown">
           <a class="dropdown-toggle" id="dropdown09" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">РУ</a>
@@ -117,7 +140,11 @@
         </div>
         <button class="navbar-toggler" id="sidebarCollapse" type="button" data-toggle="collapse"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <img src="img/align-right.svg" alt="bars" width="20px">
+          <!-- <img src="img/align-right.svg" alt="bars" width="20px"> -->
+          <svg id="arrow-right" xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 448 512">
+            <path
+              d="M16 224h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16zm416 192H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm3.17-384H172.83A12.82 12.82 0 0 0 160 44.83v38.34A12.82 12.82 0 0 0 172.83 96h262.34A12.82 12.82 0 0 0 448 83.17V44.83A12.82 12.82 0 0 0 435.17 32zm0 256H172.83A12.82 12.82 0 0 0 160 300.83v38.34A12.82 12.82 0 0 0 172.83 352h262.34A12.82 12.82 0 0 0 448 339.17v-38.34A12.82 12.82 0 0 0 435.17 288z" />
+          </svg>
         </button>
       </nav>
     </div>
@@ -365,9 +392,9 @@
                 </div>
               </div>
             </div>
-            
-            
-            
+
+
+
           </div>
           <!-- place for ads -->
           <div class="ad_block">
@@ -390,15 +417,52 @@
               <li>E-mail: info@numservice.uz</li>
             </ul>
             <ul>
-              <li class="list-inline"><a href="#"><img src="img/fb.svg" alt="icon"></a></li>
-              <li class="list-inline"><a href="#"><img src="img/insta.svg" alt="icon"></a></li>
-              <li class="list-inline"><a href="#"><img src="img/tg.svg" alt="icon"></a></li>
-              <li class="list-inline"><a href="#"><img src="img/twitter.svg" alt="icon"></a></li>
+              <li class="list-inline"><a href="#"><img  id="fb" src="img/fb.svg" alt="icon"></a></li>
+              <li class="list-inline"><a href="#"><img id="insta" src="img/insta.svg" alt="icon"></a></li>
+              <li class="list-inline"><a href="#"><img id="tg" src="img/tg.svg" alt="icon"></a></li>
+              <li class="list-inline"><a href="#"><svg class="twitter" style="vertical-align: middle" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="19.886" height="19.886"
+                    viewBox="0 0 19.886 19.886">
+                    <defs>
+                      <clipPath id="clip-path">
+                        <rect id="Rectangle_40" data-name="Rectangle 40" width="19.886" height="19.886"
+                          fill="#0c2936" />
+                      </clipPath>
+                    </defs>
+                    <g id="Mask_Group_4" data-name="Mask Group 4" clip-path="url(#clip-path)">
+                      <path id="twit"
+                        d="M19.57,1.966a7.759,7.759,0,0,1-1.371.472A4.381,4.381,0,0,0,19.327.6.226.226,0,0,0,19,.336a7.82,7.82,0,0,1-2.1.885.523.523,0,0,1-.131.017.549.549,0,0,1-.367-.143A4.235,4.235,0,0,0,13.568,0,4.494,4.494,0,0,0,12.21.214a4.208,4.208,0,0,0-2.8,3.058,4.773,4.773,0,0,0-.1,1.613.16.16,0,0,1-.157.178H9.137A11.174,11.174,0,0,1,1.41.844a.222.222,0,0,0-.367.029A4.46,4.46,0,0,0,1.74,6.2a3.793,3.793,0,0,1-.978-.387.224.224,0,0,0-.333.2,4.394,4.394,0,0,0,2.5,4.041H2.842a3.778,3.778,0,0,1-.722-.07.227.227,0,0,0-.256.295,4.326,4.326,0,0,0,3.394,2.986A7.792,7.792,0,0,1,.827,14.638h-.5a.33.33,0,0,0-.321.253.35.35,0,0,0,.163.383A11.574,11.574,0,0,0,6.086,16.9a11.714,11.714,0,0,0,5.053-1.1,11.184,11.184,0,0,0,3.7-2.831A12.469,12.469,0,0,0,17.1,9.1a12.476,12.476,0,0,0,.77-4.24V4.8a.752.752,0,0,1,.273-.58,8.6,8.6,0,0,0,1.7-1.912A.227.227,0,0,0,19.57,1.966Z"
+                        transform="translate(0 1.491)" fill="#0c2936" />
+                    </g>
+                  </svg>
+                </a></li>
             </ul>
           </div>
           <div class="col-xl-2 col-lg-2 col-md-3 col-12">
             <a href="index.html" class="footer_logo navbar-brand">
-              <img src="img/logo.svg" alt="logo" class="img-fluid logo">
+              <svg class="img-fluid logo" style="vertical-align: middle" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 84.59 50.87">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #0b2936;
+                    }
+
+                    .cls-2 {
+                      fill: #fbae22;
+                    }
+                  </style>
+                </defs>
+                <title>Asset 1</title>
+                <g id="Layer_2" data-name="Layer 2">
+                  <g id="Layer_1-2" data-name="Layer 1">
+                    <path class="cls-1" d="M34.88,0V8H21.49V45.9H13.4V8H0V0Z" />
+                    <polygon class="cls-2" points="84.59 50.87 0 50.87 0 33.13 73.38 33.13 84.59 50.87" />
+                    <path class="cls-1"
+                      d="M58.41,0a17.8,17.8,0,0,1,6.67,1.12,13.29,13.29,0,0,1,4.59,3A11.65,11.65,0,0,1,72.32,8.5a16.44,16.44,0,0,1,.85,5.24,17.75,17.75,0,0,1-.78,5.16,12.74,12.74,0,0,1-2.55,4.63,13.28,13.28,0,0,1-4.59,3.33,16.4,16.4,0,0,1-6.84,1.29H44.13A1,1,0,0,0,43,29.31V45.9H35V27.74q0-3.87,1.7-5.57t5.51-1.7H58.68a7.06,7.06,0,0,0,2.93-.55,5.52,5.52,0,0,0,2-1.42,6,6,0,0,0,1.12-2,7.37,7.37,0,0,0,.38-2.35,6.44,6.44,0,0,0-1.53-4.31A6,6,0,0,0,58.75,8H34.88V0Z" />
+                  </g>
+                </g>
+              </svg>
             </a>
           </div>
         </div>

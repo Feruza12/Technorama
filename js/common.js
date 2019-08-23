@@ -14,9 +14,15 @@ $(function () {
 		});
 	});
 
-	$('.switch').click(function(){
+	$('.switch').click(function(e){
 		console.log("clicked");
-		$('body').toggleClass('night')
+		console.log("dgd");
+
+		$('body').toggleClass('night');
+		e.preventDefault();
+		$(".img_logo").attr('src',"img/LogoWhite.svg");
+		// return false;
 	})
+
 	
 });
