@@ -168,25 +168,20 @@
   width: 80px;
   height: 80px;
   background: transparent;
-  /* margin-top: 30px; */
-  position: fixed;
   padding: 0;
-  left: 30px;
-  top: 70%;
   text-align: center;
 }
 
 .icon-wrapper, .icon-wrapper-2 {
   font-size: 40px;
   text-align: center;
-  /* margin-top: 70px; */
   position: relative;
   cursor: pointer;
   height: 80px;
-  /* display: inline-block; */
 }
 .icon-wrapper .icon, .icon-wrapper-2 .icon {
   color: #90A4AE;
+
 }
 .icon-wrapper .icon i, .icon-wrapper-2 .icon i {
   -webkit-transform: scale(1);
